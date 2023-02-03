@@ -41,13 +41,6 @@ void insert(int arr[],int&n,int x) {
     percolateUp(arr,n,n-1);
 }
 
-//int extractMax(int arr[], int &n) {
-//    swap(arr[0],arr[n-1]);
-//    n--;
-//    heapify(arr,n,0);
-//    return arr[n];
-//}
-
 void buildHeap(int arr[], int n) {
     for(int i=n/2 ; i>=0 ; i--) {
         heapify(arr,n,i);
@@ -75,10 +68,6 @@ int main()
 
     buildHeap(arr,n);
     print(arr,n);
-
-    //int res = extractMax(arr,n);
-    //cout<<"Max:   "<<res<<endl;
-    //print(arr,n);
     int x;
     cout<<"Enter the element you want to insert:  ";
     cin>>x;
